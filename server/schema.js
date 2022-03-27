@@ -3,22 +3,30 @@ import { buildSchema } from 'graphql';
  
   //
   var schema = buildSchema(`
-
     type Email {
       email: String
     }
 
     type Friend {
-      id: ID,
-      fname: String,
-      emails: [String]
-      Emails: [Email]!
+      id: ID
+      fname: String
+      email: String
     }
+
+    type Friendput {
+      id: ID
+      fname: String!
+      email: String 
+    }
+ 
 
     type Query {
       friend: Friend
     }
-  `);
+
+    type Mutation {
+      createFriend(friendinfo: Friendput): Friend
+    }`);
  
 
   //
