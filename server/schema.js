@@ -1,33 +1,49 @@
 import { buildSchema } from 'graphql';
   
- 
-  //
-  var schema = buildSchema(`
-    type Email {
-      email: String
-    }
+var schema = buildSchema(`
 
-    type Friend {
-      id: ID
-      fname: String
-      email: String
-    }
+  type Contact {
+    fname: String
+    lname: String
+  }
 
-    type Friendput {
-      id: ID
-      fname: String!
-      email: String 
-    }
- 
+  input ContactInput { 
+    fname: String!
+    lname: String
+  }
 
-    type Query {
-      friend: Friend
-    }
+  enum Gender {
+    MALE
+    FEMALE
+    OTHER
+  }
 
-    type Mutation {
-      createFriend(friendinfo: Friendput): Friend
-    }`);
- 
+  type Friend {
+    id: ID
+    fname: String
+    gender: Gender
+    age: Int
+    contacts: [Contact]
+  }
+
+  input FriendInput {
+    id: ID
+    fname: String
+    gender: Gender
+    age: Int
+    contacts: [ContactInput]
+  }
+
+
+  type Query {
+    getFriend(id: ID!): Friend
+  }
+  
+  type Mutation {
+    createFriend(input: FriendInput): Friend
+  }
+`);
+
 
   //
   export default schema;
