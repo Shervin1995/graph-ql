@@ -1,22 +1,27 @@
 import express from "express";
-// import restify from "restify";
 const { graphqlHTTP } = require('express-graphql');
 import schema from "./schema";
   
-
-// const app = restify.createServer();
 const app = express();
-
+ 
+//
+var root = {
+    hello: () => {
+        return "world!"
+    }
+}
 
 // GET
 app.get('/', graphqlHTTP({
     schema, 
+    rootValue: root, 
     graphiql: true,
 }));
  
 // POST
 app.post('/', graphqlHTTP({
-    schema, 
+    schema,  
+    rootValue: root, 
     graphiql: false,
 }));
  
