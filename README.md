@@ -1,7 +1,7 @@
-# GraphQL 
+# GraphQL (v1.0)
 2022.03.27
 
-## Run 
+## this branch (v1.0) 
 
 1. run `npm start`
 
