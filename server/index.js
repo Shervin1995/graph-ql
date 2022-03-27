@@ -6,8 +6,20 @@ const app = express();
  
 //
 var root = {
-    hello: () => {
-        return "world!"
+    friend: () => {
+        return {
+            id: 23,
+            fname: "world!",
+            emails: [
+                "me@me.com",
+                "me2@me.com",
+            ],
+            Emails: [{
+                email: "me@me.com"
+            },{
+                email: "me@me2.com"
+            }]
+        }
     }
 }
 
