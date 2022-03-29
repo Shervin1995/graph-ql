@@ -1,29 +1,43 @@
-# GraphQL (v1.4)
-2022.03.27
+# GraphQL (v1.5)
+2022.03.30
 
-## this branch (v1.4) 
-  
+## this branch (v1.5) 
+   
+Sample project demonstrating common issues to consider when working on GraphQL API
 
-graphql syntax is similar to typescript syntax
+[Article](https://www.toptal.com/graphql/creating-your-first-graphql-api)
 
-### video numbers
+# Used Core Libraries
 
-12. `age: Int`
-13. `enum Gender { `
+- [graphql-js](https://github.com/graphql/graphql-js)
+- [apollo-server](https://github.com/apollographql/apollo-server)
+- [graphql-tools](https://github.com/apollographql/graphql-tools)
+- [graphql-middleware](https://github.com/prisma/graphql-middleware)
+- [objection-js](https://github.com/vincit/objection.js)
+- [jest](https://github.com/facebook/jest)
 
-14. add contact field
+# Project Demonstrates
+
+- GraphQL Server Setup
+- Advanced Scalar Data Types
+- Splitting Schema
+- Authentication and Authorization
+- Validation
+- N + 1 Queries
+- Security
+- Integration Testing
+
+
+## postman
 
 ```
-type Query {
-type Mutation {
-
-type Friend { age: Int String [Contact] [Contact]!
-input FriendInput { Contacs: [ContactInput]
-
-type Contact { 
-input ContactInput {
+query {
+   authors {
+      id, fullName
+      books {
+         id, title 
+      }
+   }
+}
 ```
-
-## result in browser
-
-![](0.png)
+ 
