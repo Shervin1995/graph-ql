@@ -7,6 +7,24 @@ Sample project demonstrating common issues to consider when working on GraphQL A
 
 [Article](https://www.toptal.com/graphql/creating-your-first-graphql-api)
 
+## overview 
+
+![](architecture.png)
+
+
+## postman
+
+```
+query {
+   authors {
+      id, fullName
+      books {
+         id, title 
+      }
+   }
+}
+```
+
 # Used Core Libraries
 
 - [graphql-js](https://github.com/graphql/graphql-js)
@@ -27,17 +45,4 @@ Sample project demonstrating common issues to consider when working on GraphQL A
 - Security
 - Integration Testing
 
-
-## postman
-
-```
-query {
-   authors {
-      id, fullName
-      books {
-         id, title 
-      }
-   }
-}
-```
  
