@@ -1,18 +1,12 @@
 extend type Query {
-
   bookById(id: ID!): Book
-
   booksByAuthor(authorId: Int): [Book!]!
-
   books(first: Int, offset: Int): [Book!]!
 }
 
 extend type Mutation {
-
   createBook(editBookReq: EditBookReq!): Book!
-
   editBook(id: ID!, editBookReq: EditBookReq!): Book
-
   deleteBook(id: ID!): Book
 }
 

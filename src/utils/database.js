@@ -5,13 +5,17 @@ import Knex from 'knex';
 
 //
 export function initDatabase() {
+
+  //
   const dir = homedir();
 
+  //
   const databaseClient = Knex({
+
     client: 'sqlite3',
 
     connection: {
-      filename: `${ dir }/graphql.sqlite`
+      filename: `${dir}/graphql.sqlite`
     },
 
     pool: {
@@ -23,9 +27,12 @@ export function initDatabase() {
     useNullAsDefault: true,
 
     ...knexSnakeCaseMappers()
+
   });
 
+  //
   Model.knex(databaseClient);
+
 }
 
 

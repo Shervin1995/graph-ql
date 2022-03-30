@@ -1,5 +1,5 @@
 # GraphQL (v1.5)
-2022.03.30
+2022.03.30 - only backend with postman
 
 ## this branch (v1.5) 
    

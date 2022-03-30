@@ -64,6 +64,8 @@ apiExplorer.getSchema().then((schema) => {
 
     });
 
-  }).catch(err => {
+}).catch(err => {
+
     logger.error('Failed to load api', err);
-  });
+    
+});
