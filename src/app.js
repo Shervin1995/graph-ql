@@ -28,15 +28,18 @@ apiExplorer.getSchema().then((schema) => {
 
     // Configure apollo
     const apolloServer = new ApolloServer({
+
       schema,
 
       context: ({ req, res }) => {
+        
         const context = {};
 
         // Verify jwt token
         context.authUser = verify(req, res);
 
         return context;
+
       },
 
       formatError: (error) => {
@@ -49,6 +52,7 @@ apiExplorer.getSchema().then((schema) => {
       ],
 
       debug: true
+
     });
 
     //
