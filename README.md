@@ -7,10 +7,21 @@ CRUD GraphQL finished!
  
 ## final shots
 
+0
+ 
 ![](0.png)
-![](10.png)
-![](11.png)
-![](12.png)
+
+1
+
+![](img/10.png)
+
+2
+
+![](img/11.png)
+
+3
+
+![](img/12.png)
 
 ### video numbers
 
