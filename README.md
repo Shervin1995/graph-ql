@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GraphQL (v1.5)
 2022.03.30 - only backend with postman
 
@@ -6,6 +7,32 @@
 Sample project demonstrating common issues to consider when working on GraphQL API
 
 [Article](https://www.toptal.com/graphql/creating-your-first-graphql-api)
+=======
+# GraphQL (v1.4)
+2022.04.02
+
+## this branch (v1.4) 
+  
+CRUD GraphQL finished!
+ 
+## final shots
+
+0
+ 
+![](0.png)
+
+1
+
+![](img/10.png)
+
+2
+
+![](img/11.png)
+
+3
+
+![](img/12.png)
+>>>>>>> v1.6
 
 ## overview 
 
@@ -36,6 +63,7 @@ query {
 
 # Project Demonstrates
 
+<<<<<<< HEAD
 - GraphQL Server Setup
 - Advanced Scalar Data Types
 - Splitting Schema
@@ -46,3 +74,5 @@ query {
 - Integration Testing
 
  
+=======
+>>>>>>> v1.6

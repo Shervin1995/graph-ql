@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 **/dist
 **/node_modules
 **/package-lock.json
 **/.idea
+=======
+node_modules
+dist
+>>>>>>> v1.6
