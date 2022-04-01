@@ -1,10 +1,16 @@
 # GraphQL (v1.4)
-2022.03.27
+2022.04.02
 
 ## this branch (v1.4) 
   
+CRUD GraphQL finished!
+ 
+## final shots
 
-graphql syntax is similar to typescript syntax
+![](0.png)
+![](10.png)
+![](11.png)
+![](12.png)
 
 ### video numbers
 
@@ -24,6 +30,3 @@ type Contact {
 input ContactInput {
 ```
 
-## result in browser
-
-![](0.png)

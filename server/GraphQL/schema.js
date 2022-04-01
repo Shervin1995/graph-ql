@@ -1,7 +1,7 @@
-import { buildSchema } from 'graphql';
-  
-var schema = buildSchema(`
+import { buildSchema } from 'graphql';  
 
+
+var schema = buildSchema(` 
   type Contact {
     fname: String
     lname: String
@@ -33,17 +33,20 @@ var schema = buildSchema(`
     age: Int
     contacts: [ContactInput]
   }
-
+ 
 
   type Query {
-    getFriend(id: ID!): Friend
+    getOneFriend(id: ID!): Friend
+    getAliens: [Friend]
   }
   
   type Mutation {
     createFriend(input: FriendInput): Friend
+    updateFriend(input: FriendInput): Friend
+    deleteFriend(id: ID!): String
   }
 `);
+ 
 
-
-  //
-  export default schema;
+//
+export default schema;
