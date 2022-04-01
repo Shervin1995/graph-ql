@@ -9,7 +9,7 @@ CRUD GraphQL finished!
 
 0
  
-![](0.png)
+![](img/0.png)
 
 1
 
@@ -25,4 +25,8 @@ CRUD GraphQL finished!
  
 
   
- 
+ ## Error
+
+`yarn global add babel-cli `
+
+if you installed `babel-cli` as dependency, remove and install it after global installation!
