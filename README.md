@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-# GraphQL (v1.5)
-2022.03.30 - only backend with postman
-
-## this branch (v1.5) 
-   
-Sample project demonstrating common issues to consider when working on GraphQL API
-
-[Article](https://www.toptal.com/graphql/creating-your-first-graphql-api)
-=======
 # GraphQL (v1.4)
 2022.04.02
 
@@ -32,6 +22,26 @@ CRUD GraphQL finished!
 3
 
 ![](img/12.png)
+
+### video numbers
+
+12. `age: Int`
+13. `enum Gender { `
+
+14. add contact field
+
+```
+type Query {
+type Mutation {
+
+type Friend { age: Int String [Contact] [Contact]!
+input FriendInput { Contacs: [ContactInput]
+
+type Contact { 
+input ContactInput {
+```
+
+
 >>>>>>> v1.6
 
 ## overview 
